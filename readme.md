@@ -43,7 +43,7 @@ var bbox = [[min_longitude, min_latitude],[max_longitude, max_latitude]]
 Cuts the features to fit inside the bounding box
 
 ```
-ig.selectOneProp(countriesCollection, [[-12,35],[26,63]], function(feature) {
+ig.selectWithinBbox(countriesCollection, [[-12,35],[26,63]], function(feature) {
 	// returns a featureCollection
 })
 ```
@@ -53,7 +53,7 @@ ig.selectOneProp(countriesCollection, [[-12,35],[26,63]], function(feature) {
 Keeps features that overlap with the bounding box
 
 ```
-ig.selectOneProp(countriesCollection, [[-12,35],[26,63]], function(feature) {
+ig.selectOverlapBbox(countriesCollection, [[-12,35],[26,63]], function(feature) {
 	// returns a featureCollection
 })
 ```
@@ -65,7 +65,7 @@ ig.selectOneProp(countriesCollection, [[-12,35],[26,63]], function(feature) {
 Get the bounding box of a collection
 
 ```
-ig.fromColl(collection, function(bbox) {
+ig.bboxFromColl(collection, function(bbox) {
 	// returns a bounding box
 })
 
@@ -76,7 +76,7 @@ ig.fromColl(collection, function(bbox) {
 Get the bounding box of a feature
 
 ```
-ig.fromFeat(collection, function(bbox) {
+ig.bboxFromFeat(collection, function(bbox) {
 	// returns a bounding box
 })
 
