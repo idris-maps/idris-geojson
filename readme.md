@@ -60,7 +60,7 @@ ig.selectOneProp(countriesCollection, [[-12,35],[26,63]], function(feature) {
 
 ### Bounding box utilities
 
-**.fromColl(** collection, callback **)**
+**.bboxFromColl(** collection, callback **)**
 
 Get the bounding box of a collection
 
@@ -71,7 +71,7 @@ ig.fromColl(collection, function(bbox) {
 
 ```
 
-**.fromFeat(** feature, callback **)**
+**.bboxFromFeat(** feature, callback **)**
 
 Get the bounding box of a feature
 
@@ -87,7 +87,7 @@ ig.fromFeat(collection, function(bbox) {
 Returns a polygon feature
 
 ```
-ig.fromFeat(bbox, function(feature) {
+ig.featFromBbox(bbox, function(feature) {
 	// returns a feature
 })
 
