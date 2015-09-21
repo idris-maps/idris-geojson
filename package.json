@@ -1,6 +1,6 @@
 {
   "name": "idris-geojson",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Utilities to query GeoJSON",
   "main": "index.js",
   "dependencies": {
